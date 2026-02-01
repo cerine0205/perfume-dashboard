@@ -1,0 +1,106 @@
+.model-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--overlay);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  z-index: 1000;
+}
+
+.model {
+  background: var(--model);
+  width: 520px;       
+  padding: 28px 32px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: var(--text) !important;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background-color: var(--model-input) !important;
+  color: var(--text);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-save {
+  background: var(--model-bg);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: #eee;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.model-title{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--model-title);
+  text-align: center;
+
+  background: var(--model-bg);
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+
+.file-input {
+  display: none;
+}
+
+
+.file-btn {
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 12px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #e6dff3;
+  background: var(--model-btn);
+  color: #4a3a72;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.file-btn:hover {
+  background: #ede7fb;
+}
+

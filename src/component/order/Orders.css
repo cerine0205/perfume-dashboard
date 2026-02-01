@@ -1,0 +1,22 @@
+.chart-card{
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(125, 88, 160, 0.05);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.chart-title{
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.chart-area{
+  height: 260px; 
+}
+
+.recharts-wrapper{
+  direction: rtl;
+}
+

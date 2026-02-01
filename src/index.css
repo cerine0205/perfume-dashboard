@@ -1,0 +1,314 @@
+:root{
+  /* Light */
+  --bg: #f6f6fb;
+  --surface: #ffffff;
+  --surface-2: #f2f2f8;
+  --text: #1f1f2b;
+  --muted: #7a7a8c;
+  --border: #e6e6f2;
+  --card-bg: #fff;
+  --search: #fff;
+  --btn:rgba(118, 14, 120, 0.18);
+  --text2: #860d60;
+  --hover:#907e8e0e;
+  --overlay:rgba(0, 0, 0, 0.35);
+  --model:#f6f6fb;
+  --model-tilte:#480b40;
+  --model-bg: linear-gradient(135deg,  rgba(118, 14, 120, 0.18), #daaacb);
+  --model-btn:#fbf3fc;
+  --model-input:#fff;
+
+
+  --primary: #a888c9;
+  --primary-2: #edd7f6;
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+/* Dark */
+body.dark{
+  --bg: #0f1117;
+  --surface: #151826;
+  --surface-2: #1c2133;
+  --text: #f2f3fb;
+  --muted: #a9aec0;
+  --border: #2b3146;
+  --card-bg: #171b2a;        
+  --search: #1b2030;         
+  --btn: rgba(183, 154, 217, 0.22);  
+  --text2: #c7a6ee;       
+  --hover: rgba(183, 154, 217, 0.12);
+
+  --overlay: rgba(15, 17, 23, 0.72);
+  --model: #151826;
+  --model-input: #1c2133;
+  --model-title: #f2f3fb;
+  --model-bg: rgba(199, 166, 238, 0.14);
+  --model-bg: rgba(199, 166, 238, 0.14); 
+  --model-btn: #1b2030;;
+
+
+
+  --primary: #c7a6ee;
+  --primary-2: rgba(199, 166, 238, 0.18);
+  --shadow: 0 14px 34px rgba(0,0,0,.45);
+}
+
+
+body{
+  background: var(--bg);
+  color: var(--text);
+}
+
+.dashboard-layout {
+  display: flex;
+  flex-direction: row-reverse; 
+  min-height: 100vh;
+}
+
+.sideBar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-main header {
+  flex-shrink: 0;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 24px;
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin: 18px 0 10px;
+}
+
+.table-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-left: 200px;
+}
+
+.prefume-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.prefume-table thead th {
+  text-align: right; 
+  font-size: 13px;
+  font-weight: 700;
+  color: #5b5b5b;
+  padding: 14px 16px;
+  background: rgba(245, 245, 245, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.prefume-table tbody td {
+  text-align: right;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #222;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  vertical-align: middle;
+}
+
+.prefume-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+
+.prefume-table tbody tr:hover {
+  background: var(--hover);
+}
+
+.prefume-table td.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge.active {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.badge.inactive {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+
+/* ===== Orders (الطلبات) – العمود 3 ===== */
+.prefume-table tbody td:nth-child(3) {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* ===== Price (السعر) – العمود 4 ===== */
+.prefume-table tbody td:nth-child(4) {
+  font-weight: 700;
+  color: var(--muted);
+}
+
+/* ===== Perfume Name (اسم العطر) – العمود 5 ===== */
+.prefume-table tbody td:nth-child(5) {
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+
+.prefume-table tbody td:nth-child(1) {
+  font-weight: 300;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+
+
+.prefume-table img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--surface-2);
+  padding: 4px;}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.badge.active {
+  background: rgba(46, 204, 113, 0.12);
+  color: #1f8a4c;
+  border-color: rgba(46, 204, 113, 0.22);
+}
+
+.badge.inactive {
+  background: rgba(231, 76, 60, 0.12);
+  color: #b43b2f;
+  border-color: rgba(231, 76, 60, 0.22);
+}
+
+.badge::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.65;
+}
+
+.perfume-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.btn-delete {
+  background-color: #fdecea; 
+  color: #c0392b;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.btn-delete:hover {
+  background-color: #f8cfc9;
+}
+
+.opnion-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 16px;
+  margin-top: 20px;
+}
+
+
+.Rate {
+  display: flex;
+  gap: 6px;
+  direction: ltr; 
+}
+
+.Star {
+  font-size: 22px;              
+  color: #d9cfe0;            
+  opacity: 0.5;
+}
+
+.Star.filled {
+  color: #8b5fbf;             
+  opacity: 1;
+}
+
+.best-grid{
+  width: 100%;
+  height: 250px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.chart{
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(125, 88, 160, 0.05);
+  border-radius: 18px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.hover-move{
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  will-change: transform;
+}
+
+.hover-move:hover{
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+  border-color: rgba(199,166,238,.35);
+}
+
+.hover-move:active{
+  transform: translateY(-2px);
+}
+
+
+

@@ -1,0 +1,61 @@
+.state-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+
+  padding: 22px 24px;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  background: var(--card-bg);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.04);
+  min-height: 120px;
+
+}
+
+.state-icon{
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: #f2f2f2;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  color: #444;
+}
+
+.state-content{
+  text-align: right;
+  flex: 1;
+}
+
+.state-content h3{
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.state-content h1{
+  margin: 8px 0 6px;
+  font-size: 44px;
+  font-weight: 900;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+
+.h4-green{
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2e7d32;
+  opacity: 0.9;
+}
+
+.h4-red{
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #d31828; 
+  opacity: 0.9;
+}

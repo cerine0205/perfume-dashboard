@@ -1,5 +1,5 @@
 import DashboardLayout from "./Layout/DashboardLayout";
-import { BrowserRouter, Router, Route, Navigate, Routes } from "react-router-dom";
+import { HashRouter, Router, Route, Navigate, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import { useState } from "react";
 
@@ -7,7 +7,7 @@ function App(){
     const [isLogin,setIsLogin] = useState(false);
     return(
         <div>
-            <BrowserRouter >
+            <HashRouter >
             <Routes>
                 <Route element={<Login setIsLogin={setIsLogin}/>} path={"/Login"}></Route>
                 <Route element={isLogin?<DashboardLayout />:<Navigate to="/Login"/>} path={"/DashboardLayout"}></Route>
@@ -15,7 +15,7 @@ function App(){
 
             </Routes>
             
-            </BrowserRouter>
+            </HashRouter>
 
         </div>
     )

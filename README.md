@@ -25,7 +25,7 @@ https://cerine0205.github.io/perfume-dashboard/
 - JavaScript
 - HTML
 - CSS
-- - Mock API (used to simulate backend data for CRUD operations)
+- Mock API (used to simulate backend data for CRUD operations)
 
 ##  Getting Started (Local)
 ```bash

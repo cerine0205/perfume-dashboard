@@ -29,7 +29,7 @@ https://cerine0205.github.io/perfume-dashboard/
 
 ##  Getting Started (Local)
 ```bash
-git clone https://github.com/cerine0205/Perfume_Dashboard.git
+git clone https://github.com/cerine0205/perfume_dashboard.git
 cd perfume-dashboard
 npm install
 npm run dev

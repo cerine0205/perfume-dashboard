@@ -27,7 +27,7 @@ https://cerine0205.github.io/perfume-dashboard/
 - CSS
 - - Mock API (used to simulate backend data for CRUD operations)
 
-## 🚀 Getting Started (Local)
+##  Getting Started (Local)
 ```bash
 git clone https://github.com/cerine0205/Perfume_Dashboard.git
 cd perfume-dashboard

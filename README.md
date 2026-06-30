@@ -2,21 +2,7 @@
 
 A React-based admin dashboard for managing perfumes through a clean and responsive interface.
 
-This project was built to practice developing a real-world admin panel with CRUD operations, search and filtering, dynamic UI updates, and responsive UI design.
-
-## Screenshots
-
-### Dashboard
-
-![Dashboard](./screenshots/dashboard.png)
-
-### Perfume Management
-
-![Products](./screenshots/products.png)
-
-### Dark Mode
-
-![Dark Mode](./screenshots/darkmode.png)
+This project was developed to practice building a real-world dashboard application using React, focusing on CRUD operations, filtering, responsive UI design, and state management.
 
 ---
 
@@ -34,16 +20,38 @@ Password: 12345678
 
 ---
 
+## Screenshots
+
+### Dashboard
+
+The main dashboard provides an overview of the perfume management system, including statistics, recent perfumes, and quick access to management features.
+
+![Dashboard](./screenshots/dashboard.png)
+
+### Perfume Management
+
+Manage perfumes through Create, Read, Update, and Delete (CRUD) operations with search and filtering capabilities.
+
+![Perfume Management](./screenshots/products.png)
+
+### Dark Mode
+
+The dashboard includes a dark mode to improve usability and provide a better user experience.
+
+![Dark Mode](./screenshots/dark-mode.png)
+
+---
+
 ## Features
 
-- Create, edit, and delete perfumes (CRUD)
+- Create, edit, and delete perfumes
 - View the latest added perfumes
 - Search perfumes by name
 - Filter perfumes
 - Display customer reviews and ratings
 - Dynamic "Top Perfumes" section
 - Responsive dashboard layout
-- Dark Mode support
+- Dark mode support
 
 ---
 
@@ -65,7 +73,7 @@ Password: 12345678
 
 ## Project Purpose
 
-The goal of this project was to strengthen my React development skills by building an admin dashboard that simulates a real-world management system.
+The goal of this project was to strengthen my React development skills by building an admin dashboard similar to those used in real-world web applications.
 
 During this project, I practiced:
 
@@ -73,8 +81,8 @@ During this project, I practiced:
 - State management
 - CRUD operations
 - Search and filtering
-- Responsive UI design
-- Mock API integration
+- Responsive UI development
+- Working with a Mock API
 
 ---
 
@@ -92,21 +100,27 @@ src/
 
 ---
 
-## Getting Started
+## Installation
 
-Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/cerine0205/perfume-dashboard.git
 ```
 
-Install dependencies
+Navigate to the project directory:
+
+```bash
+cd perfume-dashboard
+```
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-Run the development server
+Run the development server:
 
 ```bash
 npm run dev
@@ -116,12 +130,12 @@ npm run dev
 
 ## Future Improvements
 
-- Connect the dashboard to a Laravel REST API
-- Authentication and authorization
-- Image upload support
-- Pagination
-- Dashboard analytics
-- User roles and permissions
+- Connect the application to a Laravel REST API
+- Add user authentication and authorization
+- Support image uploads
+- Add pagination
+- Improve dashboard analytics
+- Implement user roles and permissions
 
 ---
 
@@ -129,4 +143,5 @@ npm run dev
 
 Cerine
 
-GitHub: https://github.com/cerine0205
+GitHub:
+https://github.com/cerine0205

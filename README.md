@@ -38,7 +38,7 @@ Manage perfumes through Create, Read, Update, and Delete (CRUD) operations with 
 
 The dashboard includes a dark mode to improve usability and provide a better user experience.
 
-![Dark Mode](./screenshots/dark-mode.png)
+![Dark Mode](./screenshots/darkmode.png)
 
 ---
 
@@ -73,7 +73,7 @@ The dashboard includes a dark mode to improve usability and provide a better use
 
 ## Project Purpose
 
-The goal of this project was to strengthen my React development skills by building an admin dashboard similar to those used in real-world web applications.
+This project was developed as part of my frontend development learning journey, with a focus on building a responsive admin dashboard using React.
 
 During this project, I practiced:
 
